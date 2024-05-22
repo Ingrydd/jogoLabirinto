@@ -1,0 +1,113 @@
+/* Estilos gerais */
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    color: #333;
+}
+
+p {
+    color: #666;
+}
+
+#controles {
+    margin-bottom: 20px;
+}
+
+#botaoIniciar, #botaoReiniciar {
+    padding: 10px 20px;
+    margin: 0 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#botaoIniciar:hover, #botaoReiniciar:hover {
+    background-color: #0056b3;
+}
+
+#containerLabirinto.oculto {
+    display: none;
+}
+
+#labirinto {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    background-color: white;
+    border: 2px solid #000;
+    margin-bottom: 20px;
+}
+
+.parede {
+    position: absolute;
+    background-color: #000;
+}
+
+.parede1 {
+    top: 100px;
+    left: 0;
+    width: 400px;
+    height: 20px;
+}
+
+.parede2 {
+    top: 200px;
+    left: 100px;
+    width: 400px;
+    height: 20px;
+}
+
+.parede3 {
+    top: 300px;
+    left: 0;
+    width: 400px;
+    height: 20px;
+}
+
+#bola {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background-color: red;
+    border-radius: 50%;
+    transition: background-color 0.3s;
+}
+
+#fim {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 75px;
+    height: 50px;
+    background-color: #09ff00;
+    color: #e2ffed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+#informacoes {
+    text-align: center;
+}
+
+.oculto {
+    display: none;
+}
+
+.reset-posicao {
+    left: 0;
+    top: 0;
+}
